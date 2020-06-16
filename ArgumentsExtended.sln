@@ -34,6 +34,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegerMarshalerLibTest", "IntegerMarshalerLibTest\IntegerMarshalerLibTest.csproj", "{3665C159-1AF9-4189-BBA0-D6EC3D3AD955}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgumentMarshalerLibTest", "ArgumentMarshalerLibTest\ArgumentMarshalerLibTest.csproj", "{9F8B24C4-A612-4B64-A117-B4C597E06288}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BF92092E-071C-4869-B2BE-6D81CF8CF690} = {BF92092E-071C-4869-B2BE-6D81CF8CF690}
+		{2749FC50-6891-490E-BE60-F43544A8C2A1} = {2749FC50-6891-490E-BE60-F43544A8C2A1}
+		{41882DCA-1BCE-488A-BDC9-682748BFDB2F} = {41882DCA-1BCE-488A-BDC9-682748BFDB2F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
