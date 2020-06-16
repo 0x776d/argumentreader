@@ -22,8 +22,9 @@ script:
   - ls -l ./release
 
 before_deploy:
-  - git tag "Latest"
   - zip -r ./release.zip ./release
+  - export TRAVIS_TAG="Latest"
+  - git tag $TRAVIS_TAG
 
 deploy:
   provider: releases
@@ -33,5 +34,4 @@ deploy:
   skip_cleanup: true
   keep_history: true
   on:
-    tags: true
     branch: master
