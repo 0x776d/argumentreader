@@ -19,10 +19,9 @@ script:
   - dotnet test
   - mkdir ./latest
   - dotnet publish -c Release -o ./release --self-contained false
-  - ls -l ./latest
 
 before_deploy:
-  - zip -r ./latest.zip ./latest/*Lib
+  - zip -r ./latest.zip ./latest/*Lib.dll 
   - export TRAVIS_TAG="latest"
   - git tag $TRAVIS_TAG
 
@@ -30,7 +29,7 @@ deploy:
   provider: releases
   overwrite: true
   api_key: $GITHUB_TOKEN
-  file: "release.zip"
+  file: "latest.zip"
   skip_cleanup: true
   keep_history: true
   on:
