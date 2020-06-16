@@ -1,7 +1,9 @@
 ﻿using ArgumentsLib;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using Xunit;
 using Xunit.Abstractions;
@@ -11,7 +13,7 @@ namespace ArgumentsLibTest
 {
     public class ArgumentsTest
     {
-        private const string _DIRECTORY = @"C:\Users\lwnwim8\Documents\GitHub\argumentreader\Arguments\Marshaler";
+        private const string _DIRECTORY = @"./Marshaler";
         private const string _SCHEMA = "logging,port#,name*";
 
         private string[] _args;
