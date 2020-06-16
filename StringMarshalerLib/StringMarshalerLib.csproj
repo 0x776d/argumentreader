@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -9,8 +9,20 @@
     <ProjectReference Include="..\ArgumentsLib\ArgumentsLib.csproj" />
   </ItemGroup>
 
+  <!--<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Arguments\Marshaler&quot; /y" />
+  </Target>-->
+
+  <ItemGroup>
+    <CompiledFiles Include="$(TargetPath)"/>
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="%25systemroot%25\System32\xcopy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Arguments\Marshaler&quot; /y" />
+    <Copy
+        SourceFiles="@(CompiledFiles)"
+        DestinationFolder="$(SolutionDir)Arguments\Marshaler"
+        SkipUnchangedFiles="true"
+        />
   </Target>
 
 </Project>
