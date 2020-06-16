@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Arguments\Marshaler&quot; /y" />
+    <Exec Command="%25systemroot%25\System32\xcopy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)Arguments\Marshaler&quot; /y" />
   </Target>
 
 </Project>
