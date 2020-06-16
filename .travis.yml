@@ -15,13 +15,12 @@ install:
   - dotnet restore
 
 script:
-  - dotnet build --configuration Release
+  - dotnet build -c Release -o ./latest/*Lib
   - dotnet test
-  - mkdir ./latest
-  - dotnet publish -c Release -o ./release --self-contained false
+  - ls -l ./latest
 
 before_deploy:
-  - find ./latest -name '*Lib' | zip latest -@
+  - zip ./latest.zip ./latest
   - export TRAVIS_TAG="latest"
   - git tag $TRAVIS_TAG
 
