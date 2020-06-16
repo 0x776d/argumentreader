@@ -7,8 +7,7 @@ namespace ArgumentsLibTest
 {
     public class MarshalerReflectorTest
     {
-        //private const string _DIRECTORY = @"C:\Users\lwnwim8\source\repos\lwnwim8\Projekte\ArgumentsExtended\Arguments\Marshaler";
-        private const string _DIRECTORY = @"S:\Projects\Arguments\Arguments\Marshaler";
+        private const string _DIRECTORY = @"C:\Users\lwnwim8\Documents\GitHub\argumentreader\Arguments\Marshaler";
 
         MarshalerReflector _reflector;
 
@@ -42,8 +41,7 @@ namespace ArgumentsLibTest
         public void MarshalerReflectorCreateReferenceWithoutAssembliesInPath_FaillingTest()
         {
             MarshalerReflector reflector;
-            //string directory = @"C:\Users\lwnwim8\source\repos\lwnwim8\Projekte\Arguments_02\ArgumentLib";
-            string directory = @"S:\Projects\Arguments\Arguments";
+            string directory = @"C:\Users\lwnwim8\Documents\GitHub\argumentreader\Arguments\";
 
             ArgumentException ex = Assert.Throws<ArgumentException>(() => reflector = new MarshalerReflector(directory));
 

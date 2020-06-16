@@ -11,8 +11,7 @@ namespace ArgumentsLibTest
 {
     public class ArgumentsTest
     {
-        //private const string _DIRECTORY = @"C:\Users\lwnwim8\source\repos\lwnwim8\Projekte\ArgumentsExtended\Arguments\Marshaler";
-        private const string _DIRECTORY = @"S:\Projects\Arguments\Arguments\Marshaler";
+        private const string _DIRECTORY = @"C:\Users\lwnwim8\Documents\GitHub\argumentreader\Arguments\Marshaler";
         private const string _SCHEMA = "logging,port#,name*";
 
         private string[] _args;
