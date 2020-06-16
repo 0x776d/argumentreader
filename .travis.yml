@@ -17,12 +17,12 @@ install:
 script:
   - dotnet build --configuration Release
   - dotnet test
-  - mkdir ./release
+  - mkdir ./latest
   - dotnet publish -c Release -o ./release --self-contained false
-  - ls -l ./release
+  - ls -l ./latest
 
 before_deploy:
-  - zip -r ./release.zip ./release
+  - zip -r ./latest.zip ./latest/*Lib
   - export TRAVIS_TAG="latest"
   - git tag $TRAVIS_TAG
 
