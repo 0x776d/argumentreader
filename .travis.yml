@@ -21,7 +21,7 @@ script:
   - dotnet publish -c Release -o ./release --self-contained false
 
 before_deploy:
-  - find ./latest -name '*Lib' | zip latest.zip -@ 
+  - find ./latest -name '*Lib' | zip latest -@
   - export TRAVIS_TAG="latest"
   - git tag $TRAVIS_TAG
 
