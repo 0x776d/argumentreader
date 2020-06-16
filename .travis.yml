@@ -10,6 +10,4 @@ install:
   - dotnet restore
 
 script:
-  - chmod 0777 ${TRAVIS_BUILD_DIR}/xcopy.bash
-  - alias xcopy="${TRAVIS_BUILD_DIR}/xcopy.bash"
   - dotnet build
