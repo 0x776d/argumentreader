@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Argument": {
+      "commandName": "Project",
+      "commandLineArgs": "-logging -text \"Hallo\""
+    }
+  }
+}
