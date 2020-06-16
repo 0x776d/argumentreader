@@ -18,4 +18,10 @@
     <ProjectReference Include="..\ArgumentsLib\ArgumentsLib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="Marshaler\*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
