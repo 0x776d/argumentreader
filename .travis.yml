@@ -21,7 +21,7 @@ script:
 
 before_deploy:
   - export TRAVIS_TAG="latest"
-  - git tag $TRAVIS_TAG
+  - git tag $TRAVIS_TAG --force
   - find ./latest -name "*Lib.dll" -maxdepth 1 | zip -@ latest.zip
 
 deploy:
