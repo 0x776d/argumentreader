@@ -18,7 +18,7 @@ Own argument types can be build with own classes. They need to inherit from the 
     <PackageTags>Command Line Interface, CLI, Arguments</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>1.0.4</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
