@@ -19,7 +19,7 @@ script:
 
 before_deploy:
   - dotnet build -c Release -o ./output
-  - find ./latest -name "*Lib.dll" -maxdepth 1 | zip -@ ArgumentReader.zip
+  - find ./output -name "*Lib.dll" -maxdepth 1 | zip -@ ArgumentReader.zip
 
 deploy:
   provider: releases
