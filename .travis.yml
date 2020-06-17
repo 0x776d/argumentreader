@@ -21,7 +21,7 @@ script:
 
 before_deploy:
   - zip -r ./latest.zip ./latest
-  - export TRAVIS_TAG="v1"
+  - export TRAVIS_TAG="latest"
   - git tag $TRAVIS_TAG
 
 deploy:
