@@ -15,27 +15,24 @@ install:
   - dotnet restore
 
 script:
-  - dotnet build -c Release -o ./latest
   - dotnet test
-  - ls -l ./latest
 
 before_deploy:
-  - export TRAVIS_TAG="latest"
-  - git tag $TRAVIS_TAG --force
-  - find ./latest -name "*Lib.dll" -maxdepth 1 | zip -@ latest.zip
+  - dotnet build -c Release -o ./output
+  - find ./latest -name "*Lib.dll" -maxdepth 1 | zip -@ ArgumentReader.zip
 
 deploy:
   provider: releases
   overwrite: true
   api_key: $GITHUB_TOKEN
   file:
-    - "./latest.zip"
-    - "./latest/ArgumentMarshalerLib.dll"
-    - "./latest/ArgumentsLib.dll"
-    - "./latest/BooleanMarshalerLib.dll"
-    - "./latest/IntegerMarshalerLib.dll"
-    - "./latest/StringMarshalerLib.dll"
+    - "./ArgumentReader.zip"
+    - "./output/ArgumentMarshalerLib.dll"
+    - "./output/ArgumentsLib.dll"
+    - "./output/BooleanMarshalerLib.dll"
+    - "./output/IntegerMarshalerLib.dll"
+    - "./output/StringMarshalerLib.dll"
   skip_cleanup: true
   keep_history: true
   on:
-    branch: master
+    - tags: true
