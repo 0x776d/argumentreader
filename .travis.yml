@@ -16,6 +16,7 @@ install:
 
 script:
   - dotnet test
+  - ls -l ./ArgumentsLib
 
 before_deploy:
   - dotnet build -c Release -o ./output
