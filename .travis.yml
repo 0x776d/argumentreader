@@ -16,12 +16,10 @@ install:
 
 script:
   - dotnet test
-  - ls -l ./ArgumentsLib
-  - dotnet pack ./ArgumentsLib/*.csproj -c Release
-  - ls -l ./ArgumentsLib/bin/Release
 
 before_deploy:
   - dotnet build -c Release -o ./output
+  - ls -l ./output
   - find ./output -name "*Lib.dll" -maxdepth 1 | zip -@ ArgumentReader.zip
   - dotnet nuget push ./ArgumentsLib/bin/Release/*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" 
     
