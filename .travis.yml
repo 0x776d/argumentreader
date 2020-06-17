@@ -20,7 +20,8 @@ script:
 before_deploy:
   - dotnet build -c Release -o ./output
   - ls -l ./output
-  - dotnet nuget push ./output/*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" --skip-duplicate     
+  - dotnet nuget push ./output/0x776d-ArgumentMarshalerLib.*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" --skip-duplicate
+  - dotnet nuget push ./output/0x776d-ArgumentsLib.*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" --skip-duplicate  
   - find ./output -name "*Lib.dll" -maxdepth 1 | zip -@ ArgumentReader.zip
 
 deploy:
