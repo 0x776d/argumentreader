@@ -22,7 +22,7 @@ before_deploy:
   - find ./output -name "*Lib.dll" -maxdepth 1 | zip -@ ArgumentReader.zip
 
 after_deploy:
-  - dotnet nuget push ./output/0x776d-ArgumentMarshalerLib.*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" --skip-duplicate
+  - dotnet nuget push ./output/0x776d-ArgumentMarshalerLib.*.nupkg -k $GITHUB_TOKEN -s "github" --skip-duplicate
   - dotnet nuget push ./output/0x776d-ArgumentsLib.*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" --skip-duplicate  
 
 deploy:
