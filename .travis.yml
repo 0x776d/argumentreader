@@ -20,9 +20,9 @@ script:
   - ls -l ./latest
 
 before_deploy:
-  - find ./latest -name "*Lib.dll" -maxdepth 1 | zip -@ latest.zip
   - export TRAVIS_TAG="latest"
   - git tag $TRAVIS_TAG
+  - find ./latest -name "*Lib.dll" -maxdepth 1 | zip -@ latest.zip
 
 deploy:
   provider: releases
