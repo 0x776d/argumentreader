@@ -20,7 +20,7 @@ script:
   - ls -l ./latest
 
 before_deploy:
-  - zip -r ./latest.zip ./latest
+  - zip -r ./latest.zip ./latest/*Lib.dll
   - export TRAVIS_TAG="latest"
   - git tag $TRAVIS_TAG
 
