@@ -20,9 +20,8 @@ script:
 before_deploy:
   - dotnet build -c Release -o ./output
   - find ./output -name "*Lib.dll" -maxdepth 1 | zip -@ ArgumentReader.zip
-  - dotnet pack ./ArgumentsLib/*.csproj -c Release
-  - dotnet nuget push ./ArgumentsLib/bin/Release/*.nupkg -s "https://api.nuget.org/v3/index.json" -k $NUGET_TOKEN
-
+  - dotnet nuget push ./output/*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" 
+    
 deploy:
   provider: releases
   overwrite: true
