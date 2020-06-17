@@ -27,7 +27,7 @@ Arguments parameter = new Arguments("SCHEMA", "ARGUMENT ARRAY", "PATH TO MARSHAL
 
 * [BooleanMarshalerLib.dll](https://github.com/0x776d/argumentreader/releases/latest/download/BooleanMarshalerLib.dll)
 * [StringMarshalerLib.dll](https://github.com/0x776d/argumentreader/releases/latest/download/StringMarshalerLib.dll)
-* [IntegerMarshalerLib.dll](https://github.com/0x776d/argumentreader/releases/latest/download/IntegerMarshalerLib)
+* [IntegerMarshalerLib.dll](https://github.com/0x776d/argumentreader/releases/latest/download/IntegerMarshalerLib.dll)
 
 ### Schema
 
