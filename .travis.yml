@@ -21,7 +21,7 @@ before_deploy:
   - dotnet build -c Release -o ./output
   - ls -l ./output
   - find ./output -name "*Lib.dll" -maxdepth 1 | zip -@ ArgumentReader.zip
-  - dotnet nuget push ./ArgumentsLib/bin/Release/*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" 
+  - dotnet nuget push ./output/0x776d-ArgumentsLib.1.0.1.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" 
     
 deploy:
   provider: releases
