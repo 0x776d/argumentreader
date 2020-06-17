@@ -21,11 +21,13 @@ Own argument types can be build with own classes. They need to inherit from the 
 Arguments parameter = new Arguments("SCHEMA", "ARGUMENT ARRAY", "PATH TO MARSHALER LIBRARIES");
 ```
 
+[Download all available Packages](https://github.com/0x776d/argumentreader/releases/latest/download/ArgumentReader.zip)
+
 ### Available Marshalers (Standard)
 
-* BooleanMarshalerLib.dll
-* StringMarshalerLib.dll
-* Integer MarshalerLib.dll
+* [BooleanMarshalerLib.dll](https://github.com/0x776d/argumentreader/releases/latest/download/BooleanMarshalerLib.dll)
+* [StringMarshalerLib.dll](https://github.com/0x776d/argumentreader/releases/latest/download/StringMarshalerLib.dll)
+* [IntegerMarshalerLib.dll](https://github.com/0x776d/argumentreader/releases/latest/download/IntegerMarshalerLib)
 
 ### Schema
 
