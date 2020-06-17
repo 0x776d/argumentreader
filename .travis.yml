@@ -16,6 +16,7 @@ install:
 
 script:
   - dotnet test
+  - ls -l ./ArgumentsLib
   - dotnet pack ./ArgumentsLib/*.csproj -c Release
   - ls -l ./ArgumentsLib/bin/Release
 
