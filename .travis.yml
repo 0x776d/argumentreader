@@ -20,7 +20,8 @@ script:
 before_deploy:
   - dotnet build -c Release -o ./output
   - ls -l ./output
-  - dotnet nuget push ./output/*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" --skip-duplicate     - find ./output -name "*Lib.dll" -maxdepth 1 | zip -@ ArgumentReader.zip
+  - dotnet nuget push ./output/*.nupkg -k $NUGET_TOKEN -s "https://api.nuget.org/v3/index.json" --skip-duplicate     
+  - find ./output -name "*Lib.dll" -maxdepth 1 | zip -@ ArgumentReader.zip
 
 deploy:
   provider: releases
