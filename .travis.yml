@@ -29,6 +29,7 @@ deploy:
   overwrite: true
   api_key: $GITHUB_TOKEN
   file:
+    - "latest.zip"
     - "./latest/ArgumentMarshalerLib.dll"
     - "./latest/ArgumentsLib.dll"
     - "./latest/BooleanMarshalerLib.dll"
