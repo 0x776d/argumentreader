@@ -15,7 +15,7 @@ install:
   - dotnet restore
 
 script:
-  - dotnet build -c Release -o ./latest/*Lib.dll
+  - dotnet build -c Release -o ./latest
   - dotnet test
   - ls -l ./latest
 
@@ -28,7 +28,12 @@ deploy:
   provider: releases
   overwrite: true
   api_key: $GITHUB_TOKEN
-  file: "latest.zip"
+  file:
+    - "./latest/ArgumentMarshalerLib.dll"
+    - "./latest/ArgumentsLib.dll"
+    - "./latest/BooleanMarshalerLib.dll"
+    - "./latest/IntegerMarshalerLib.dll"
+    - "./latest/StringMarshalerLib.dll"
   skip_cleanup: true
   keep_history: true
   on:
