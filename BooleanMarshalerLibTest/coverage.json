@@ -1,0 +1,342 @@
+{
+  "ArgumentMarshalerLib.dll": {
+    "C:\\Users\\lwnwim8\\Documents\\GitHub\\argumentreader\\ArgumentMarshalerLib\\ArgumentMarshaler.cs": {
+      "ArgumentMarshalerLib.ArgumentMarshaler": {
+        "System.Object ArgumentMarshalerLib.ArgumentMarshaler::get_Value()": {
+          "Lines": {
+            "11": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lwnwim8\\Documents\\GitHub\\argumentreader\\ArgumentMarshalerLib\\ArgumentsException.cs": {
+      "ArgumentMarshalerLib.ArgumentsException": {
+        "System.String ArgumentMarshalerLib.ArgumentsException::get_ErrorArgumentId()": {
+          "Lines": {
+            "47": 0
+          },
+          "Branches": []
+        },
+        "System.String ArgumentMarshalerLib.ArgumentsException::get_ErrorParameter()": {
+          "Lines": {
+            "48": 0
+          },
+          "Branches": []
+        },
+        "ArgumentMarshalerLib.ErrorCode ArgumentMarshalerLib.ArgumentsException::get_ErrorCode()": {
+          "Lines": {
+            "49": 3
+          },
+          "Branches": []
+        },
+        "System.Void ArgumentMarshalerLib.ArgumentsException::.ctor()": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.Void ArgumentMarshalerLib.ArgumentsException::.ctor(System.String)": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "27": 0
+          },
+          "Branches": []
+        },
+        "System.Void ArgumentMarshalerLib.ArgumentsException::.ctor(ArgumentMarshalerLib.ErrorCode)": {
+          "Lines": {
+            "29": 1,
+            "30": 1,
+            "31": 1,
+            "32": 1
+          },
+          "Branches": []
+        },
+        "System.Void ArgumentMarshalerLib.ArgumentsException::.ctor(ArgumentMarshalerLib.ErrorCode,System.String)": {
+          "Lines": {
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        },
+        "System.Void ArgumentMarshalerLib.ArgumentsException::.ctor(ArgumentMarshalerLib.ErrorCode,System.String,System.String)": {
+          "Lines": {
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\lwnwim8\\Documents\\GitHub\\argumentreader\\ArgumentMarshalerLib\\Iterator.cs": {
+      "ArgumentMarshalerLib.Iterator`1": {
+        "T ArgumentMarshalerLib.Iterator`1::get_Current()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean ArgumentMarshalerLib.Iterator`1::get_HasNext()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        },
+        "T ArgumentMarshalerLib.Iterator`1::Next()": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        },
+        "T ArgumentMarshalerLib.Iterator`1::Previous()": {
+          "Lines": {
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        },
+        "System.Void ArgumentMarshalerLib.Iterator`1::.ctor(System.Collections.Generic.IList`1<T>)": {
+          "Lines": {
+            "11": 3,
+            "12": 3,
+            "13": 3,
+            "14": 3
+          },
+          "Branches": [
+            {
+              "Line": 13,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 11,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            }
+          ]
+        }
+      }
+    }
+  },
+  "BooleanMarshalerLib.dll": {
+    "C:\\Users\\lwnwim8\\Documents\\GitHub\\argumentreader\\BooleanMarshalerLib\\BooleanArgumentMarshaler.cs": {
+      "BooleanMarshalerLib.BooleanArgumentMarshaler": {
+        "System.String BooleanMarshalerLib.BooleanArgumentMarshaler::get_Schema()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.Void BooleanMarshalerLib.BooleanArgumentMarshaler::Set(ArgumentMarshalerLib.Iterator`1<System.String>)": {
+          "Lines": {
+            "13": 2,
+            "14": 2,
+            "15": 2
+          },
+          "Branches": []
+        }
+      },
+      "BooleanMarshalerLib.BooleanArgumentMarshaler/BooleanArgumentMarshalerException": {
+        "System.String BooleanMarshalerLib.BooleanArgumentMarshaler/BooleanArgumentMarshalerException::ErrorMessage()": {
+          "Lines": {
+            "25": 1,
+            "26": 1,
+            "29": 1,
+            "31": 0,
+            "33": 1
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 11,
+              "EndOffset": 15,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 26,
+              "Offset": 11,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void BooleanMarshalerLib.BooleanArgumentMarshaler/BooleanArgumentMarshalerException::.ctor(ArgumentMarshalerLib.ErrorCode)": {
+          "Lines": {
+            "19": 1,
+            "20": 1,
+            "22": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "IntegerMarshalerLib.dll": {
+    "C:\\Users\\lwnwim8\\Documents\\GitHub\\argumentreader\\IntegerMarshalerLib\\IntegerArgumentMarshaler.cs": {
+      "IntegerMarshalerLib.IntegerArgumentMarshaler": {
+        "System.String IntegerMarshalerLib.IntegerArgumentMarshaler::get_Schema()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.Void IntegerMarshalerLib.IntegerArgumentMarshaler::Set(ArgumentMarshalerLib.Iterator`1<System.String>)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "33": 0
+          },
+          "Branches": []
+        }
+      },
+      "IntegerMarshalerLib.IntegerArgumentMarshaler/IntegerArgumentMarshalerException": {
+        "System.String IntegerMarshalerLib.IntegerArgumentMarshaler/IntegerArgumentMarshalerException::ErrorMessage()": {
+          "Lines": {
+            "48": 0,
+            "49": 0,
+            "52": 0,
+            "54": 0,
+            "56": 0,
+            "58": 0,
+            "60": 0,
+            "62": 0
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 11,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 11,
+              "EndOffset": 44,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 11,
+              "EndOffset": 52,
+              "Path": 5,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 11,
+              "EndOffset": 76,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 40,
+              "EndOffset": 84,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 58,
+              "Offset": 91,
+              "EndOffset": 93,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 58,
+              "Offset": 91,
+              "EndOffset": 99,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 11,
+              "EndOffset": 102,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 11,
+              "EndOffset": 102,
+              "Path": 4,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 40,
+              "EndOffset": 102,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void IntegerMarshalerLib.IntegerArgumentMarshaler/IntegerArgumentMarshalerException::.ctor(ArgumentMarshalerLib.ErrorCode)": {
+          "Lines": {
+            "37": 0,
+            "38": 0,
+            "40": 0
+          },
+          "Branches": []
+        },
+        "System.Void IntegerMarshalerLib.IntegerArgumentMarshaler/IntegerArgumentMarshalerException::.ctor(ArgumentMarshalerLib.ErrorCode,System.String)": {
+          "Lines": {
+            "42": 0,
+            "43": 0,
+            "45": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
