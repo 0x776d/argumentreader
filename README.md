@@ -1,4 +1,4 @@
-[![Version: 1.0 Release](https://img.shields.io/badge/Version-1.0%20Release-green.svg)](https://github.com/0x776d) [![Build Status](https://travis-ci.org/0x776d/argumentreader.svg?branch=master)](https://travis-ci.org/0x776d/argumentreader) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Version: 1.0 Release](https://img.shields.io/badge/Version-1.0%20Release-green.svg)](https://github.com/0x776d) [![Build Status](https://travis-ci.org/0x776d/argumentreader.svg?branch=master)](https://travis-ci.org/0x776d/argumentreader) [![codecov](https://codecov.io/gh/0x776d/argumentreader/branch/master/graph/badge.svg)](https://codecov.io/gh/0x776d/argumentreader) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # Argument Reader
 ---
