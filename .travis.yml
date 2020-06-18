@@ -13,7 +13,7 @@ addons:
 
 install:
   - dotnet restore
-  - dotnet tool install Codecov.Tool
+  - dotnet tool install --global Codecov.Tool
 
 script:
   - dotnet test
